@@ -49,5 +49,6 @@ plt.show()
 
 disp = metrics.ConfusionMatrixDisplay.from_predictions(y_test, y_pred)
 disp.figure_.suptitle("Confusion Matrix")
+plt.savefig('confusion_matrix.png', dpi=100)
 print(f"Confusion Matrix:\n{disp.confusion_matrix}")
 plt.show()
